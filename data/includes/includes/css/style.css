@@ -1,0 +1,76 @@
+:root{
+  --blue:#0B3C5D;
+  --gray:#333;
+  --light:#F4F6F8;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Segoe UI",Arial,sans-serif;
+  color:var(--gray);
+}
+
+.container{
+  width:90%;
+  max-width:1100px;
+  margin:auto;
+}
+
+.header{
+  background:var(--blue);
+  color:#fff;
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:15px 0;
+}
+.logo{font-weight:700}
+nav a{
+  color:#fff;
+  margin-left:20px;
+  text-decoration:none;
+}
+nav .lang{margin-left:20px; font-size:0.9em}
+
+.hero{
+  background:var(--light);
+  padding:70px 0;
+}
+.hero h1{margin:0 0 10px}
+.hero p{max-width:700px}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 22px;
+  background:var(--blue);
+  color:#fff;
+  text-decoration:none;
+}
+
+.section{padding:60px 0}
+.section.light{background:var(--light)}
+.about{max-width:800px}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.card{
+  border:1px solid #ddd;
+  padding:25px;
+  background:#fff;
+}
+
+.footer{
+  background:#222;
+  color:#ccc;
+  padding:20px 0;
+  text-align:center;
+  font-size:0.9em;
+}
